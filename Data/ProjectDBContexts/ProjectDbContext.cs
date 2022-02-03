@@ -13,7 +13,7 @@ public class ProjectDbContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=example;User Id=xxx;Password =xxx");
+            optionsBuilder.UseSqlServer(@"Server=.\;Database=PersonalDB;Trusted_Connection=true");
         }
     }
 }
