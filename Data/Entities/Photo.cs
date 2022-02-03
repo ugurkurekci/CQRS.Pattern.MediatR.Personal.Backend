@@ -12,8 +12,7 @@ public class Photo : BaseEntity
     [Required, MinLength(1)]
     public string ImagePath { get; set; }
 
-   
-    public DateTime CreationDate { get; set; }= DateTime.Now;
+    public DateTime CreationDate { get; set; } = DateTime.Now;
 
     [DefaultValue(typeof(DateTime), "2021-01-01")]
     public DateTime UpdateDate { get; set; }

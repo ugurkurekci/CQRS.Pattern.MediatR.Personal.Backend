@@ -13,8 +13,8 @@ public class CreatePhotoCommandHandler : IRequestHandler<CreatePhotoCommand, int
 
     public CreatePhotoCommandHandler(IPhotoRepository photoRepository, IMapper mapper)
     {
-        _photoRepository=photoRepository;
-        _mapper=mapper;
+        _photoRepository = photoRepository;
+        _mapper = mapper;
     }
 
     public async Task<int> Handle(CreatePhotoCommand request, CancellationToken cancellationToken)

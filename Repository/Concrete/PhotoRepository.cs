@@ -10,7 +10,7 @@ namespace Repository.Concrete
 
         public PhotoRepository(ProjectDbContext projectDbContext)
         {
-            _projectDbContext=projectDbContext;
+            _projectDbContext = projectDbContext;
         }
 
         public async Task AddAsync(Photo photo)
@@ -20,4 +20,3 @@ namespace Repository.Concrete
         }
     }
 }
-

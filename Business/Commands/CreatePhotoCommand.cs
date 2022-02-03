@@ -9,6 +9,6 @@ public class CreatePhotoCommand : IRequest<int>
 
     public CreatePhotoCommand(CreatePhotoModel createPhotoModel)
     {
-        CreatePhotoModel=createPhotoModel;
+        CreatePhotoModel = createPhotoModel;
     }
 }

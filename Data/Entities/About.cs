@@ -5,7 +5,7 @@ namespace Data.Entities
 {
     public class About : BaseEntity
     {
-        public int photoID { get; set; }
+        public int PhotoID { get; set; }
 
         [Required, MaxLength(50)]
         public string Name { get; set; }
