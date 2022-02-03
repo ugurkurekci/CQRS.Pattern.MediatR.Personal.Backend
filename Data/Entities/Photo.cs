@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace Data.Entities
+namespace Data.Entities;
+
+public class Photo : BaseEntity
 {
-    public class Photo:BaseEntity
-    {
+    [Required]
+    [MaxLength(50)]
+    public string Name { get; set; }
 
-        public string Name { get; set; }
+    [Required, MinLength(1)]
+    public string ImagePath { get; set; }
 
-        public string ImagePath { get; set; }
+    [DefaultValue(typeof(DateTime), "2021-01-01")]
+    public DateTime CreationDate { get; set; }
 
-        public DateTime CreationDate { get; set; }
-    }
+    [DefaultValue(typeof(DateTime), "2021-01-01")]
+    public DateTime UpdateDate { get; set; }
 }
